@@ -59,7 +59,10 @@ def one(string):
 
 
 def two(number):
-    return False
+    if number % 1 & number % number == 0:
+        return True
+    else:
+        return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
