@@ -30,6 +30,9 @@
 # <HINT>
 # How does a for loop iterate through a string?
 
+import string
+
+
 def one(string):
     firstlist = list[string]
     secondlist = []
@@ -82,7 +85,13 @@ def two(number):
 
 
 def three(a):
-    return 1
+    string1 = string(a)
+    string2 = string1 + string1
+    string3 = string2 + string1
+    string4 = string3 + string1
+
+    sum = int(string1) + int(string2) + int(string3) + int(string4)
+    return sum
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
