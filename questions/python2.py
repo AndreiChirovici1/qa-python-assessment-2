@@ -166,9 +166,11 @@ def five():
     # <HINT>
     # There are no hints for this question.
 
-
 def six(string):
-    return False
+    if string[len(string)-2] == "p" & string[len(string)-1] == "y":
+        return True
+    else:
+        return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
