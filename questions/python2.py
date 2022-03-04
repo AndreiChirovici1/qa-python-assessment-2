@@ -223,7 +223,11 @@ def seven(a, b, c):
 
 
 def eight(string,  a):
-    return ""
+    startpos = (len(string) - a) / 2
+    endpos = startpos + a
+    chars = string[startpos:endpos]
+    newString = string.replace("chars", "")
+    return newString
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
