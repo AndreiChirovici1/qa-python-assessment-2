@@ -123,7 +123,8 @@ def three(a):
 
 
 def four(string1, string2):
-    return ""
+    merge = ''.join(''.join(i for i in tup) for tup in zip(string1, string2))
+    return merge
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
