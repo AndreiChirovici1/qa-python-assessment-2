@@ -142,9 +142,11 @@ def four(string1, string2):
     # There is a module which can be used to generate random numbers, this module is called random.
     # The random module contains a function called randint.
 
-
+import random
 def five():
-    return []
+    string = random.sample([i for i in range(1,100) if i%2==0], 5)
+    mylist = list[string]
+    return mylist
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
