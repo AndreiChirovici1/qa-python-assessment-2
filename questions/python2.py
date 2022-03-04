@@ -31,8 +31,15 @@
 # How does a for loop iterate through a string?
 
 def one(string):
-    return ""
-
+    firstlist = list[string]
+    secondlist = []
+    str = ''
+    for i in range(len(firstlist)):
+        secondlist.append(firstlist[i])
+        secondlist.append(firstlist[i])
+    for i in range(len(secondlist)):
+        string += secondlist[i]
+    return str
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 2>
