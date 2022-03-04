@@ -247,7 +247,20 @@ def eight(string,  a):
 
 
 def nine(string1, string2):
-    return False
+    lenS1 = len(string1)
+    lenS2 = len(string2)
+ 
+    if lenS1 != lenS2:
+        return 0
+
+    str1 = sorted(string1)
+    str2 = sorted(string2)
+ 
+    for i in range(0, lenS1):
+        if str1[i] == str2[i]:
+            return 1
+        else:
+            return 0
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
