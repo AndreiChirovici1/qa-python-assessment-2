@@ -281,6 +281,11 @@ def nine(string1, string2):
 
 
 def ten(x, y):
-    return []
+    twoDimArray = [[0 for col in range(x)] for row in range(y)]
+
+    for row in range(x):
+        for col in range(y):
+            twoDimArray[row][col] = row*col
+        return twoDimArray
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
